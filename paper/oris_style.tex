@@ -1,0 +1,45 @@
+% Layout and typography for "One Photo Fewer".
+\usepackage[T1]{fontenc}
+\usepackage{iftex}
+\ifPDFTeX\usepackage[utf8]{inputenc}\fi
+\usepackage{amsmath}
+\usepackage{newpxtext,newpxmath}
+\usepackage{microtype}
+\usepackage[letterpaper,top=1in,bottom=1in,left=1.15in,right=1.15in,headheight=14pt,headsep=20pt,footskip=30pt]{geometry}
+\usepackage{booktabs,tabularx,array,graphicx,xcolor,enumitem,caption,fancyhdr,titlesec}
+\usepackage{url}
+\usepackage{flafter}
+\definecolor{orisnavy}{HTML}{0D366B}
+\usepackage[colorlinks=true,linkcolor=orisnavy,citecolor=orisnavy,urlcolor=orisnavy,pdfusetitle=false]{hyperref}
+\setlength{\parindent}{1.3em}
+\setlength{\parskip}{0pt plus 0.5pt}
+\setlength{\emergencystretch}{1.5em}
+\linespread{1.04}
+\hyphenation{album albums}
+\clubpenalty=9000 \widowpenalty=9500 \displaywidowpenalty=9500
+\setlist{nosep,leftmargin=1.5em,topsep=4pt,itemsep=2.5pt}
+% Headings
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{0.8em}{}
+\titlespacing*{\section}{0pt}{16pt plus 3pt minus 2pt}{6pt plus 1pt}
+% A bold run-in lead for a paragraph
+\newcommand{\runin}[1]{\par\vspace{3pt plus 1pt}\noindent\textbf{#1}\enspace\ignorespaces}
+% Header and footer
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\textsc{One Photo Fewer}}
+\fancyhead[R]{\small\textsc{Pantheon Labs}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{firstpage}{\fancyhf{}\fancyfoot[C]{\small\thepage}\renewcommand{\headrulewidth}{0pt}}
+% Captions and floats
+\captionsetup{font=small,labelfont=bf,labelsep=period,skip=7pt,justification=justified,singlelinecheck=true}
+\captionsetup[table]{position=top,skip=5pt}
+\setlength{\textfloatsep}{14pt plus 3pt minus 2pt}
+\setlength{\intextsep}{12pt plus 3pt minus 2pt}
+\setlength{\floatsep}{12pt plus 3pt minus 2pt}
+\renewcommand{\topfraction}{0.9}\renewcommand{\bottomfraction}{0.8}\renewcommand{\textfraction}{0.1}\renewcommand{\floatpagefraction}{0.75}
+% A set-off quotation from the logs
+\newcommand{\pull}[2]{\par\vspace{7pt plus 1pt}{\leftskip=1.6em\rightskip=1.6em\noindent\textit{#1}\par\vspace{1.5pt}\noindent{\small --- #2}\par}\vspace{7pt plus 1pt}\noindent\ignorespaces}
+% Tables
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\tablefont}{\small}
+\renewcommand{\arraystretch}{1.12}

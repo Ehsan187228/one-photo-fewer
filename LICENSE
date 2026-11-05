@@ -1,0 +1,12 @@
+Copyright (c) 2026 Pantheon Labs. All rights reserved.
+
+The paper, data and code in this repository are published so that the results
+can be read, cited and independently verified. Reading them, running the
+included checks and citing them with attribution are permitted. No other rights
+are granted.
+
+Third-party material keeps its own terms. Starting designs from the La Jolla
+Coverings Repository (D. Gordon, Zenodo, doi:10.5281/zenodo.19735294) are used
+under CC BY 4.0, and the changes made are the searches described in the paper.
+Other starting designs come from WitnessFlow (car-b), Zarco, Özdemir and the
+V3R1T4S contributors, under their own terms.

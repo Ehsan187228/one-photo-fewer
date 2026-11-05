@@ -1,0 +1,30 @@
+name: Verify records
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: supplement
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Test the checker
+        run: python3 verify.py --self-test
+      - name: Check all 29 records
+        run: python3 verify.py --all
+      - name: Check the structural claims
+        run: python3 check_structure.py
+      - name: Regenerate the 42-guest record
+        run: sh solver/regenerate_42_12_3.sh

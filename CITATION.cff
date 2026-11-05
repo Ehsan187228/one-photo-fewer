@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using these results."
+title: "One Photo Fewer: Inside the Oris Harness, Open-Weight Models Set 29 New Records for a Thirty-Year-Old Table of Mathematics"
+type: dataset
+authors:
+  - name: "Pantheon Labs"
+    email: "contact@pantheon-labs.io"
+date-released: "2026-11-05"
+url: "https://github.com/Ehsan187228/one-photo-fewer"
+repository-code: "https://github.com/Ehsan187228/one-photo-fewer"
+keywords:
+  - Oris
+  - research harness
+  - open-weight models
+  - covering designs
+  - AI for mathematics
+  - exact verification

@@ -1,0 +1,30 @@
+run,v,k,t,new_blocks,bar,frozen_table_value,blocks_below_bar,origin
+Run 2,40,13,5,1332,1338,1338,6,search from a public La Jolla snapshot design
+Run 2,53,21,5,386,387,387,1,"combining construction of Gordon, Kuperberg and Patashnik"
+Run 2,72,14,5,20341,20342,20342,1,search from a public La Jolla snapshot design
+Run 2,73,12,5,53625,53627,53627,2,search from a public La Jolla snapshot design
+Run 3,41,18,4,68,69,69,1,search from a public La Jolla snapshot design
+Run 3,42,19,4,59,60,60,1,search from a public La Jolla snapshot design
+Run 3,47,17,5,671,672,672,1,search from a public La Jolla snapshot design
+Run 3,47,18,3,33,34,34,1,search from a public La Jolla snapshot design
+Run 4,47,8,4,3984,3985,3986,1,search from a public Özdemir design
+Run 4,71,14,4,1999,2000,2000,1,search from a public La Jolla snapshot design
+Run 5,41,12,5,2128,2207,2244,79,search from a public V3R1T4S design
+Run 5,61,20,5,1168,1169,1169,1,search from a public La Jolla snapshot design
+Run 5,62,14,3,143,148,148,5,"point deletion from another record in this file C(64,14,3)"
+Run 5,63,14,3,143,156,156,13,"point deletion from another record in this file C(64,14,3)"
+Run 5,63,14,5,10111,10114,10114,3,search from a public La Jolla snapshot design
+Run 5,64,14,3,143,156,162,13,search from a public Zarco design
+Run 5,65,23,4,119,121,128,2,search from a public Zarco design
+Run 5,67,13,5,22206,22207,22207,1,search from a public La Jolla snapshot design
+Run 5,68,14,5,15619,15675,16001,56,search from a public V3R1T4S design
+Run 5,68,24,4,119,121,122,2,"point deletion from another record in this file C(69,24,4)"
+Run 5,69,24,4,119,121,125,2,search from a public Zarco design
+Run 5,71,25,4,120,124,126,4,search from a public WitnessFlow design
+Run 5,72,15,5,13944,13945,13945,1,search from a public La Jolla snapshot design
+Run 5,72,25,4,123,124,128,1,search from a public WitnessFlow design
+Run 5,74,16,3,148,154,154,6,"point deletion from another record in this file C(75,16,3)"
+Run 5,75,16,3,148,156,164,8,"search from a public Zarco design for C(76,16,3), reduced to 75 points"
+Run 6,41,9,3,167,168,168,1,search from a public La Jolla snapshot design
+Run 6,42,12,3,74,75,76,1,search from a public WitnessFlow design
+Run 6,44,11,3,109,110,110,1,search from a public La Jolla snapshot design

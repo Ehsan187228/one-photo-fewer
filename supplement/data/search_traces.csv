@@ -1,0 +1,94 @@
+series,seconds,uncovered,best_so_far,accepted_moves
+"C(41,9,3), the record",0,6,6,
+"C(41,9,3), the record",5.0,4,4,10060
+"C(41,9,3), the record",6.108,0,0,
+"C(44,11,3), the record",0,9,9,
+"C(44,11,3), the record",5.0,23,8,32936
+"C(44,11,3), the record",10.0,19,8,44620
+"C(44,11,3), the record",15.0,3,1,51664
+"C(44,11,3), the record",15.52,0,0,
+"C(42,12,3), the regenerated record",0,7,7,
+"C(42,12,3), the regenerated record",5.0,146,3,10468
+"C(42,12,3), the regenerated record",10.0,22,3,13759
+"C(42,12,3), the regenerated record",15.0,57,3,16706
+"C(42,12,3), the regenerated record",20.0,79,3,21202
+"C(42,12,3), the regenerated record",25.0,101,3,24165
+"C(42,12,3), the regenerated record",30.0,88,3,27587
+"C(42,12,3), the regenerated record",35.0,87,3,30627
+"C(42,12,3), the regenerated record",40.0,37,3,33170
+"C(42,12,3), the regenerated record",45.0,9,3,36357
+"C(42,12,3), the regenerated record",50.0,1,1,40028
+"C(42,12,3), the regenerated record",55.0,1,1,45304
+"C(42,12,3), the regenerated record",56.912,0,0,49251
+"C(48,23,3), stuck one short",0,250,250,
+"C(48,23,3), stuck one short",5.0,1,1,2200
+"C(48,23,3), stuck one short",10.0,57,1,2435
+"C(48,23,3), stuck one short",15.0,28,1,4979
+"C(48,23,3), stuck one short",20.0,28,1,6403
+"C(48,23,3), stuck one short",25.0,30,1,8218
+"C(48,23,3), stuck one short",30.0,1,1,8987
+"C(48,23,3), stuck one short",35.0,53,1,9437
+"C(48,23,3), stuck one short",40.0,52,1,10994
+"C(48,23,3), stuck one short",45.0,1,1,11289
+"C(48,23,3), stuck one short",50.0,1,1,11289
+"C(48,23,3), stuck one short",55.0,1,1,11298
+"C(48,23,3), stuck one short",60.0,28,1,11605
+"C(48,23,3), stuck one short",65.0,28,1,13175
+"C(48,23,3), stuck one short",70.0,52,1,15352
+"C(48,23,3), stuck one short",75.0,28,1,17132
+"C(48,23,3), stuck one short",80.0,28,1,18867
+"C(48,23,3), stuck one short",85.0,31,1,21093
+"C(48,23,3), stuck one short",90.0,1,1,23105
+"C(48,23,3), stuck one short",95.0,1,1,23105
+"C(48,23,3), stuck one short",100.0,1,1,23105
+"C(48,23,3), stuck one short",105.0,1,1,23105
+"C(48,23,3), stuck one short",110.0,1,1,23105
+"C(48,23,3), stuck one short",115.0,1,1,23105
+"C(48,23,3), stuck one short",120.0,1,1,23105
+"C(48,23,3), stuck one short",125.0,1,1,23105
+"C(48,23,3), stuck one short",130.0,1,1,23105
+"C(48,23,3), stuck one short",135.0,1,1,23105
+"C(48,23,3), stuck one short",140.0,1,1,23105
+"C(48,23,3), stuck one short",145.0,1,1,23105
+"C(66,20,3), before the fix",0,99,99,
+"C(66,20,3), before the fix",5.0,37,35,7173
+"C(66,20,3), before the fix",10.0,43,31,12488
+"C(66,20,3), before the fix",45.0,31,31,37498
+"C(66,20,3), before the fix",50.0,32,31,38200
+"C(66,20,3), before the fix",55.0,31,31,38838
+"C(66,20,3), before the fix",60.0,31,31,39700
+"C(66,20,3), before the fix",65.0,31,31,40264
+"C(66,20,3), before the fix",70.0,31,31,40822
+"C(66,20,3), before the fix",75.0,31,31,41196
+"C(66,20,3), before the fix",80.0,31,31,41591
+"C(66,20,3), before the fix",85.0,31,31,42079
+"C(66,20,3), before the fix",90.0,31,31,42590
+"C(66,20,3), before the fix",95.0,31,31,42918
+"C(66,20,3), before the fix",100.0,31,31,43174
+"C(66,20,3), before the fix",105.0,31,31,43395
+"C(66,20,3), before the fix",110.0,31,31,43633
+"C(66,20,3), before the fix",115.0,31,31,43830
+"C(66,20,3), before the fix",120.0,31,31,44019
+"C(66,20,3), before the fix",125.0,31,31,44245
+"C(66,20,3), before the fix",130.0,31,31,44468
+"C(66,20,3), before the fix",135.0,35,31,44652
+"C(66,20,3), before the fix",140.0,35,31,44652
+"C(66,20,3), before the fix",145.0,35,31,44652
+"C(66,20,3), before the fix",150.0,35,31,44652
+"C(66,20,3), before the fix",155.0,35,31,44652
+"C(66,20,3), before the fix",160.0,35,31,44652
+"C(66,20,3), before the fix",165.0,35,31,44652
+"C(66,20,3), before the fix",170.0,35,31,44652
+"C(66,20,3), before the fix",175.0,35,31,44652
+"C(66,20,3), before the fix",180.0,35,31,44652
+"C(66,20,3), before the fix",185.0,35,31,44652
+"C(66,20,3), before the fix",190.0,35,31,44652
+"C(66,20,3), before the fix",195.0,35,31,44652
+"C(66,20,3), before the fix",200.0,35,31,44652
+"C(66,20,3), before the fix",205.0,35,31,44652
+"C(66,20,3), before the fix",210.0,35,31,44652
+"C(66,20,3), before the fix",215.0,35,31,44652
+"C(66,20,3), before the fix",220.0,35,31,44652
+"C(66,20,3), before the fix",225.0,35,31,44652
+"C(66,20,3), before the fix",230.0,35,31,44652
+"C(66,20,3), before the fix",235.0,35,31,44652
