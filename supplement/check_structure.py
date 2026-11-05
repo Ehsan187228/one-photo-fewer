@@ -18,8 +18,9 @@ It checks seven things, printing what it finds and stopping if a claim fails:
   4. The (42,12,3) record has new twin points, and three 74-block solutions share no block.
   5. The stuck (48,23,3) state with 15 blocks is one triple short for a counting reason:
      it is built on the geometry PG(3,2), and every block is exactly full.
-  6. Proposition 1 of the paper's appendix, by building that object from scratch.
-  7. Proposition 2, by trying all 817,190 ways to place the spare seats.
+  6. That the trap can be built from scratch out of the planes of PG(3,2) and three ovoids.
+  7. That 48 guests cannot all sit on planes of PG(3,2) in 15 photos of 23, by trying
+     all 817,190 ways to place the spare seats.
 """
 import collections
 import itertools
@@ -305,7 +306,7 @@ def check_proposition_1():
     assert all(len(b) == 23 for b in blocks.values())
     uncovered = [t for t in itertools.combinations(range(48), 3) if not (guest_sets[t[0]] & guest_sets[t[1]] & guest_sets[t[2]])]
     assert uncovered == [(45, 46, 47)]
-    print("Proposition 1: built from the planes of PG(3,2) and three ovoids, 48 guests in 15 photos of 23 miss exactly one trio.")
+    print("The trap, rebuilt from the planes of PG(3,2) and three ovoids: 48 guests in 15 photos of 23 miss exactly one trio.")
 
 
 def check_proposition_2():
@@ -326,7 +327,7 @@ def check_proposition_2():
             place(point + 1, left - n)
     place(1, 9)
     assert tried == 817190 and found == 0
-    print("Proposition 2: of all 817,190 ways to place 9 spare seats on the 15 blocks, none meets every plane in 1 mod 4 seats.")
+    print("No 15-photo album puts every guest on a plane of PG(3,2): of all 817,190 ways to place 9 spare seats on the 15 blocks, none meets every plane in 1 mod 4 seats.")
 
 
 def main():

@@ -37,7 +37,7 @@ These are covering designs: $C(v,k,t)$ is the smallest number of blocks of size 
 | $C(44,11,3)$ | 110 | Alessandro Jurcovich, 2022 | **109** |
 | $C(42,12,3)$ | 75 (table: 76) | WitnessFlow, 2026 | **74** |
 
-A record here means below the lowest public value found on 3 November 2026. All 29 records are listed in [`supplement/records.csv`](supplement/records.csv) and in Appendix B of the paper.
+A record here means below the lowest public value found on 3 November 2026. All 29 records are listed in [`supplement/records.csv`](supplement/records.csv) and in the appendix of the paper.
 
 ![Run 1 and Run 6 on one clock](paper/figures/two_clocks.png)
 
@@ -61,7 +61,7 @@ python3 verify.py                  # the three headline records, under a second
 python3 verify.py --all            # all 29 records, about a minute and a half
 python3 verify.py --others         # adds nine further valid designs not counted among the 29, about a minute
 python3 verify.py --self-test      # tests the checker on good and broken designs
-python3 check_structure.py         # the grids, the twins, the trap and both propositions, a few seconds
+python3 check_structure.py         # the grids, the twins and the trap, a few seconds
 sh solver/regenerate_42_12_3.sh    # reruns GLM-5.3's search for the 74-block record, about half a minute
 ```
 

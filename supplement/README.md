@@ -9,7 +9,7 @@ python3 verify.py --self-test     # tests the checker on good and broken designs
 python3 verify.py                 # the three headline records, under a second
 python3 verify.py --all           # all 29 records, about a minute and a half
 python3 verify.py --others        # adds nine further valid designs not counted among the 29, about a minute
-python3 check_structure.py        # the grids, the twins, the trap and both propositions, a few seconds
+python3 check_structure.py        # the grids, the twins and the trap, a few seconds
 sh solver/regenerate_42_12_3.sh   # reruns GLM-5.3's search for the 74-block record, about half a minute
 ```
 
@@ -20,7 +20,7 @@ sh solver/regenerate_42_12_3.sh   # reruns GLM-5.3's search for the 74-block rec
 | Path | What it holds |
 |---|---|
 | `verify.py` | Checks the designs against `records.csv` and the files against `MANIFEST.json` |
-| `check_structure.py` | Rechecks the grids, the twins, the trap and both propositions |
+| `check_structure.py` | Rechecks the grids, the twins and the trap |
 | `certificates/` | The 29 record designs, one file per entry (`v`, `k`, `t`, `claimed_size`, `blocks`) |
 | `records.csv` | Each record: run, entry, new size, bar, frozen table value, where it started |
 | `seeds/` | The three public designs the headline searches started from |

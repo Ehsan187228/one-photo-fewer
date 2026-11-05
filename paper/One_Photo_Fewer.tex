@@ -78,7 +78,7 @@ The model knew the recipe. It did not finish. From Run~2 on, the team did: every
 
 \begin{figure}[!tb]
 \centering
-\includegraphics[width=0.93\linewidth]{figures/two_clocks.pdf}
+\includegraphics[width=0.88\linewidth]{figures/two_clocks.pdf}
 \caption{Two runs on one clock: Run~1 under an early version of Oris, Run~6 under a later one, with \mbox{DeepSeek-V4.1-Flash} on the team.}\label{fig:clocks}
 \end{figure}
 
@@ -100,7 +100,7 @@ Two checks on running jobs each caught a real fault: a search that never searche
 
 \begin{figure}[!tb]
 \centering
-\includegraphics[width=0.93\linewidth]{figures/traces.pdf}
+\includegraphics[width=0.88\linewidth]{figures/traces.pdf}
 \caption{Left: the log that gave the bug away, on another entry before the fix (dashed across a gap between logged points). Right: the searches behind the delivered albums, with the time each took to reach zero. The 42-guest line is the rerun that produced the delivered album; it climbed to at least 146 missing before reaching zero at 57 seconds. The 426 seconds in the text belong to the first 74-photo album.}\label{fig:traces}
 \end{figure}
 
@@ -110,12 +110,12 @@ Close is not done. Remove the weakest photo from the public 41-guest album and o
 
 The most striking near miss was the 48-guest entry: 23 to a photo, 15 photos, where the table has said 16 since January 2009 and the floor is 15. A 600-second search reached 17,295 of 17,296 trios in five seconds and never improved. When a session's first theory collapsed, its next message said: ``My reading of the dynamics must be wrong somewhere.'' It logged the moves being rejected, found a true bug in one line of whole-number arithmetic and told the whole team at minute~55. The fix unfroze the search, and the search still stopped one trio short.
 
-It was a trap, and a GLM-5.3 session measured most of it: at minute~77.6 it reported that its sampled stuck albums shared one form, with the three guests of the missing trio in 10 photos each, exactly two of them in every photo, and any swap that seats them breaking at least 108 other trios. A post-run analysis completed the picture. At least 7 of the run's 9 stuck albums (one kept, six rebuilt from the run's own programs) are one design with the names changed. Forty-five guests come in 15 sets of three who always appear together, plus 3 lone guests. Every photo holds 21 set members and 2 of the lone guests: exactly 23, exactly full. The one trio never photographed is the three lone guests. Seating them together needs seat 24 (Figure~\ref{fig:seat}). Appendix~\ref{app:math} proves what the trap is and leaves open whether 15 photos can ever be enough.
+It was a trap, and a GLM-5.3 session measured most of it: at minute~77.6 it reported that its sampled stuck albums shared one form, with the three guests of the missing trio in 10 photos each, exactly two of them in every photo, and any swap that seats them breaking at least 108 other trios. A post-run analysis completed the picture. At least 7 of the run's 9 stuck albums (one kept, six rebuilt from the run's own programs) are one design with the names changed. Forty-five guests come in 15 sets of three who always appear together, plus 3 lone guests. Every photo holds 21 set members and 2 of the lone guests: exactly 23, exactly full. The one trio never photographed is the three lone guests. Seating them together needs seat 24 (Figure~\ref{fig:seat}). Whether 15 photos can ever be enough is still open.
 
 \begin{figure}[!tb]
 \centering
-\begin{minipage}[c]{0.33\linewidth}\centering\includegraphics[width=\linewidth]{figures/one_seat_short.pdf}\end{minipage}\hfill
-\begin{minipage}[c]{0.61\linewidth}
+\begin{minipage}[c]{0.30\linewidth}\centering\includegraphics[width=\linewidth]{figures/one_seat_short.pdf}\end{minipage}\hfill
+\begin{minipage}[c]{0.64\linewidth}
 \caption{The stuck 48-guest album the run preserved. Every row is a photo with 7 dark squares (21 guests) and 2 orange (2 guests), so every photo is full at 23. No row has all three orange squares: that is the one missing trio.}\label{fig:seat}
 \end{minipage}
 \end{figure}
@@ -126,7 +126,7 @@ A post-run analysis of the albums found hidden geometry in two of the three head
 
 \begin{figure}[!tb]
 \centering
-\includegraphics[width=0.74\linewidth]{figures/inside_record.pdf}
+\includegraphics[width=0.64\linewidth]{figures/inside_record.pdf}
 \caption{The old and new 41-guest albums, reordered by the geometry. Each column is a photo, each row a guest, and a mark means that guest is in that photo. The dark photos are the two-grid pattern, identical in both albums. The orange photos are where the search did its work.}\label{fig:inside}
 \end{figure}
 
@@ -175,9 +175,7 @@ Across the six runs the main model, the machine and the two-hour budget stayed f
 
 \section{Verification}
 
-The supplement is at \url{https://github.com/Ehsan187228/one-photo-fewer}. Its checks need Python 3.9 or later and nothing else: no network, no model, no Oris. \mbox{\texttt{python3 verify.py}} checks the three headline records in under a second, and \texttt{--all} checks all 29 in about a minute and a half. \texttt{check\_structure.py} rechecks the grids, the trap and both propositions in a few seconds. The 42-guest record also regenerates, with a C compiler, by rerunning GLM-5.3's search program from the supplement, in about half a minute.
-
-The check does not ask which model found these albums or whom to trust. It counts trios.
+The supplement is at \url{https://github.com/Ehsan187228/one-photo-fewer}. Its checks need Python 3.9 or later and nothing else: no network, no model, no Oris. \mbox{\texttt{python3 verify.py}} checks the three headline records in under a second, and \texttt{--all} checks all 29 in about a minute and a half. \texttt{check\_structure.py} rechecks the grids, the twins and the trap in a few seconds. The 42-guest record also regenerates, with a C compiler, by rerunning GLM-5.3's search program from the supplement, in about half a minute. The check does not ask which model found these albums or whom to trust. It counts trios.
 
 \section*{Declarations}
 {\small
@@ -185,23 +183,6 @@ The check does not ask which model found these albums or whom to trust. It count
 }
 
 \appendix
-\section{For specialists}\label{app:math}
-{\small
-The structure below comes from post-run analysis of the albums. \texttt{check\_structure.py} rechecks the grids, the shared 100, the 64, the swap counts, the twins, the trap and both propositions. Coordinates are in the supplement.
-
-\textbf{(41,9,3).} The points split as $A \cup B$, read as AG(2,5) and AG(2,4). Five of the six parallel classes of $A$ are matched with the five classes of $B$, and all 20 line pairs in each matched pair are blocks, giving the 100 core blocks. Two points of $B$ and one of $A$ always share a core block; two points of $A$ and one of $B$ do too, unless the pair lies on a sixth-class line. Lines of the sixth class of $A$ take 4-sets partitioning $B$ (20 blocks in the public design; in the record 19, and on the fifth line the last four points of $B$ sit three in a block of shape 6+3 and one in the block of shape 8+1). Each design has one block of shape 8+1 and 37 blocks inside $A$; blocks inside $B$ fell from 10 to 9.
-
-\textbf{(44,11,3).} Points split as $P_1 \cup P_2 \cup Q$ with sizes 16, 16, 12 and labels in $\mathbb{Z}_2^4$, under which lines are cosets of the five subgroups of a spread and $Q$ is a third copy of the plane with one coset deleted. For each of the four other directions, a line of $P_1$, a line of $P_2$ and the coset completing their sum, which has lost exactly one point, form a block: 64 core blocks of size $4+4+3$, identical in the public design and the record.
-
-\textbf{(42,12,3).} The public design has the twin pair $\{40,42\}$; the record keeps it and gains $\{15,31\}$.
-
-\textbf{Proposition 1.} \emph{Let the 15 blocks be the points of PG(3,2). For each of the 15 planes add three design points lying in exactly the blocks of that plane. Partition the blocks into three ovoids $O_1,O_2,O_3$ (cosets of the order-5 subgroup of $\mathbb{F}_{16}^*$) and add points $x_i$ lying in every block outside $O_i$. Then $v=48$, $b=15$, $k=23$, and exactly one triple is uncovered.} Proof: each block lies on 7 planes and in exactly one coset, so it holds $21+2=23$ points. Three planes share a point. Two planes meet in a line, which no coset contains, so two planes and an $x_i$ share a point. A plane meets every coset, because the five points of a coset sum to zero and a plane therefore holds an odd number of them, so a plane, $x_i$ and $x_j$ share a point of $O_k$. The cosets cover all blocks, so $x_1,x_2,x_3$ share nothing. $\square$ The state preserved from Run~6 is this object. In dual terms its 45 plane points are a weighted blow-up of PG(3,2) with every weight 3, the construction used in Zarco's upper bounds \cite{zarco}. The $x_i$ are not points of that geometry: each lies in 10 blocks rather than 7, and a pure blow-up misses no triple.
-
-\textbf{Proposition 2.} \emph{No 15 blocks of size at most 23 hold 48 points whose block sets are all planes of PG(3,2).} Proof: let $w(\pi)$ count points attached to plane $\pi$ and $e_p \ge 0$ the free seats in block $p$, so $\sum e_p = 15 \cdot 23 - 48 \cdot 7 = 9$. Summing over a plane's 7 blocks gives $161 - e(\pi) = 7w(\pi) + 3(48 - w(\pi))$, so $e(\pi) = 17 - 4w(\pi) \equiv 1 \pmod 4$ and the free seats off $\pi$ number 0, 4 or 8. These 15 numbers sum to $9 \cdot 8 = 72 > 60$, so some plane $H$ has 8 off and a single free seat $p$ on it. Take a plane $H'$ missing $p$, and $H''$ the third plane through $H \cap H'$. If $X$ of the other 8 seats lie on $H''$ but not $H'$, then $H'$ has $X+1$ off and $H''$ has $9-X$ off, which cannot both be multiples of 4. $\square$ This excludes no other shape, not even the trap's, whose $x_i$ lie in 10 blocks each, so $C(48,23,3)$ stays open between 15 and 16.
-
-\textbf{Open questions.} Is $C(48,23,3)$ 15 or 16? All but one of the blocks of the 44-guest record fall into regular classes, and that block alone covers 12 triples, so could a 108-block $(44,11,3)$ exist? With the grids frozen, $(41,9,3)$ at 166 blocks leaves 3,330 triples for 66 blocks: could an exact method settle whether 66 blocks can cover them? Corrections, and the history of these constructions, are welcome at \href{mailto:contact@pantheon-labs.io}{contact@pantheon-labs.io}.\par
-}
-
 \section{All 29 records}\label{app:records}
 {\small
 All are valid under a fresh exact checker and under the referee of their run. Four follow from another record by deleting a guest, marked $\dagger$. In all, 216 photos were saved against the bars. Run~2 also produced six valid designs it did not deliver, among them $C(40,13,5)\le 1{,}329$, $C(72,14,5)\le 20{,}339$ and $C(73,14,5)\le 22{,}465$; they are not counted among the 29, and \texttt{verify.py --others} checks them.\par
@@ -237,9 +218,9 @@ Run & Entry & New / bar & Run & Entry & New / bar & Run & Entry & New / bar\\
 \begingroup
 \footnotesize
 \raggedright
+\renewcommand{\refname}{References{\normalfont\small\enspace web sources read on 3 November 2026}}
 \begin{thebibliography}{99}
-\setlength{\itemsep}{0pt}
-\item[] Web sources were read on 3 November 2026.
+\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}
 \bibitem{repository} The Covering Repository. \url{https://coveringrepository.com/}.
 \bibitem{deepseek} DeepSeek-AI. DeepSeek-V4.1-Flash model card, revision 314113f. \url{https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash}.
 \bibitem{gkp} D.\,M. Gordon, G. Kuperberg and O. Patashnik. New constructions for covering designs. \emph{J. Combin. Designs} 3(4), 269--284, 1995. doi:10.1002/jcd.3180030404.
